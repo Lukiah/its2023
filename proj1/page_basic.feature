@@ -24,7 +24,7 @@ Feature: Basic application functionality
         Then the desired product is shown
 
     Scenario: Product detail page
-        Given user is situated on home page
+        Given user is situated on any catalog page
         And at least one product is listed
         When user clicks on the product image
         Then product page with details is displayed

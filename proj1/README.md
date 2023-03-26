@@ -1,53 +1,70 @@
-# Testování a dynamická analýza
-### akademický rok 2022/2023
-### zpracoval: Lukáš Zedek (xzedek03)
-## Projekt - část 1.
-## Návrh testovací sady pro regresní testy webové aplikace
+# ITS Projekt 1
 
-### Testovací sady
-* page_basic.feature
-* page_advanced.feature
-* user_actions.feature
-* admin_actions.feature
-* shopping_cart.feature
+- **Autor:** Lukáš Zedek (xzedek03)
+- **Datum:** 2023-03-26
 
-### page_basic sada
-Obsahuje 5 testovacích scénářů, zaměřených na velmi základní funkcionality aplikace. Konkrétně:
-* Načtení aplikace
-* Změna zobrazované měny
-* Navigace strukturou
-* Vyhledávání produktů
-* Zobrazení detailů produktu
+## Matice pokrytí artefaktů
 
-### page_advanced sada
-Obsahuje 4 testovací scénaře, které mají za účel ověřit komplikovanější funkce aplikace. Jedná se o:
-* Porovnávání produktů
-* Přidání produktu do seznamu přání
-* Přihlášení odběru novinek
-* Využití kontaktního formuláře
+Čísla testů jednoznačně identifikují scénář v souborech `.feature`.
 
-### user_actions sada
-Obsahuje 5 testovacích scénářů, týkajících se uživatelského účtu a interakcemi s ním, konkrétně tedy:
-* Úspěšná registrace
-* Neúspěšná registrace
-* Úspěšné přihlášení
-* Úspěšná změna hesla
-* Neúspěšná změna hesla
+| Page                  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+|-----------------------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Home page             | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Any catalog page      |   | x | x |   | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x | x |   |   |
+| Product page          |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Product detail page   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Comparison page       |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Wish list page        |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Newsletter page       |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Contact form page     |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Registration          |   |   |   |   |   |   |   |   |   | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Login page            |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Password page         |   |   |   |   |   |   |   |   |   |   |   |   | x | x |   |   |   |   |   |   |   |   |   |   |   |
+| Shopping cart         |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x | x |   |   |
+| Checkout page         |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x |
+| Admin login page      |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |
+| Admin orders page     |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   | x |   |   |   |   |   |
+| Admin catalog page    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x |   |   |   |   |   |   |   |
+| Admin customers page  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |
 
-### admin_actions sada
-Obsahuje 6 testovacích scénářů, ověřujících funkce, které jsou přístupné pouze administrátorům. Jsou to:
-* Přihlášení jako administrátor
-* Zobrazení objednávek zákazníků
-* Přidání položky do katalogu
-* Změna na položce v katalogu
-* Odebrání účtů zákazníka
-* Změna stavu objednávky
 
-### shopping_cart sada
-Tato testovací sada, obsahující 5 scénářů, kontroluje zejména funkcionalitu košíku a možnost zadat objednávku. Scénaře jsou následující:
-* Přidání položky do košíku
-* Zobrazení obsahu košíku
-* Odebrání položky z košíku
-* Funkční stránka "pokladny"
-* Úspěšné zadání objednávky
+
+
+
+## Matice pokrytí aktivit
+
+| Activities | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+|----------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Application loading   | x | x | x | x | x | x |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |
+| Currency change       |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Basic navigation      |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Browsing              |   |   |   | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Comparison            |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Add to wishlist       |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Subsription           |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Send message          |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Registration          |   |   |   |   |   |   |   |   |   | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| Login                 |   |   |   |   |   |   |   |   |   |   |   | x |   |   | x |   |   |   |   |   |   |   |   |   |   |
+| Password changes      |   |   |   |   |   |   |   |   |   |   |   |   | x | x |   |   |   |   |   |   |   |   |   |   |   |
+| Admin rights          |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x | x | x | x | x |   |   |   |   |   |
+| View orders           |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |   |
+| Add to catalog        |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |   |
+| Change product        |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |
+| Change customer acc   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |
+| Change order          |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |
+| Change cart content   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   | x |   |   |
+| View cart             |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |
+| Checkout              |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x |
+
+
+## Matice Feature-Test
+
+| Feature file | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+|----------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| page_basic.feature | x | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| page_advanced.feature |   |   |   |   |   | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| user_actions.feature |   |   |   |   |   |   |   |   |   | x | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |
+| admin_actions.feature |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x | x | x | x | x |   |   |   |   |   |
+| shopping_cart.feature |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x | x | x | x | x |
+
 
