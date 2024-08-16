@@ -4,3 +4,4 @@
 ### část 1. - návrh testovací sady pro regresní testy webové aplikace
 18/20b
 ### část 2. - implementace testovací sady
+16/20b
